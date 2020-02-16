@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
     sudo update-binfmts --enable qemu-arm
     systemctl start docker.service
 
-    git clone --branch docker https://github.com/6za/pi-gen.git
+    git clone https://github.com/6za/pi-gen.git
     chown -R vagrant:vagrant pi-gen
   SHELL
   

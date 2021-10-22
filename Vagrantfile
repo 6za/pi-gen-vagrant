@@ -18,13 +18,13 @@ Vagrant.configure("2") do |config|
      sudo apt-get update
     sudo apt-get install -y coreutils quilt parted qemu-user-static debootstrap zerofree zip dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl
     sudo apt-get install -y qemu qemu-user-static binfmt-support
-    curl -sSL https://get.docker.com/ | sh
-    sudo usermod -aG docker vagrant
+    #curl -sSL https://get.docker.com/ | sh
+    #sudo usermod -aG docker vagrant
     sudo update-binfmts --enable qemu-arm
-    systemctl start docker.service
+    #systemctl start docker.service
 
-    git clone https://github.com/6za/pi-gen.git
-    chown -R vagrant:vagrant pi-gen
+    #git clone https://github.com/6za/pi-gen.git
+    #chown -R vagrant:vagrant pi-gen
   SHELL
   
 end

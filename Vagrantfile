@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "debian/buster64"
-  config.vm.box_version = "10.0.0"
+  config.vm.box_version = "10.4.0"
   config.vm.provision "shell", inline: <<-SHELL
      sudo apt-get update
     sudo apt-get install -y coreutils quilt parted qemu-user-static debootstrap zerofree zip dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl
